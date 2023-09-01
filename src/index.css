@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,600;0,700;1,300;1,400&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+ font-family: "Titillium Web, sans-serif"
+}
+ 
+.background {
+  background-image: url('./assets/Moeziiiii.JPG');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  opacity: 0.2;
+  align-items: center;
+  transition: opacity 1s ease-in-out; 
+}
+
+.overlay {
+  
+  background-color: rgba(0,0,0, 0.5); 
+}
+
+.background.loaded {
+  opacity: 1;  
+}
+
+.content {
+  z-index: 1;
+}
+
+
+
+.flame {
+  animation: flameAnimation 1s infinite;
+}
+
+@keyframes flameAnimation {
+  0%, 100% {
+    text-shadow: none;
+  }
+  50% {
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.7), 0 0 10px rgba(255, 0, 0, 0.5), 0 0 20px rgba(255, 0, 0, 0.3);
+  }
+}
