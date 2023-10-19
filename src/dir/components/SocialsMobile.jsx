@@ -7,7 +7,7 @@ import { SiApplemusic } from "react-icons/si";
 export default function SocialsMobile() {
   return (
     <div className="100-vw flex justify-center items-end">
-      <div className="flex justify-center items-end w-full  space-x-4 p-4">
+      <div className="overlay  rounded-xl flex justify-center items-end w-full  space-x-4 p-4">
         <div className=" ">
           <BsSpotify
             title="Spotify"

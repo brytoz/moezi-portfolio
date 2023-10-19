@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
-import FlameText from "../FlameText";
+import FlameText from "./FlameText";
 
-export default function TopNav({  showAbout }) {
+export default function TopNav({  showAbout, showMusic }) {
 
   return (
     <Fragment>
@@ -16,11 +16,17 @@ export default function TopNav({  showAbout }) {
 
         <div className="  md:text-normal w-full lg:flex lg:items-center justify-evenly lg:w-auto text-base">
           <div className="font-bold lg:flex items-center justify-evenly md:space-x-20 md:mr-12">
-            <div
+          <div
               onClick={showAbout}
               className="responsive-header block cursor-pointer lg:inline-block lg:mt-0 text-[#d3d3d3} hover:text-[#d3d3d3}/75"
             >
               About
+            </div>
+            <div
+              onClick={showMusic}
+              className="responsive-header block cursor-pointer lg:inline-block lg:mt-0 text-[#d3d3d3} hover:text-[#d3d3d3}/75"
+            >
+              Music
             </div>
           </div>
         </div>

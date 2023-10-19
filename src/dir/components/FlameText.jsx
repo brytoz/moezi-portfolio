@@ -1,6 +1,6 @@
 import React, { useState } from 'react'; 
 
-const FlameTextIndex = () => {
+const FlameText = () => {
   const [flameActive, setFlameActive] = useState(false);
 
   const handleMouseEnter = () => {
@@ -12,30 +12,30 @@ const FlameTextIndex = () => {
   };
 
   return (
-    <div className="flex justify-center items-center 100vh uppercase">
+    <div className="opacity-75   flex justify-center items-center 100vh uppercase">
       <h1
-        className={`cursor-pointer text-2xl md:text-8xl m-0 md:m-2 font-extrabold relative ${flameActive ? 'flame' : ''}`}
+        className={`cursor-pointer text-xl md:text-4xl m-0 md:m-2 font-extrabold relative ${flameActive ? 'flame' : ''}`}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
         M
       </h1>
       <h1
-        className={`cursor-pointer text-2xl md:text-8xl m-0 md:m-2 font-extrabold relative ${flameActive ? 'flame' : ''}`}
+        className={`cursor-pointer text-xl md:text-4xl m-0 md:m-2 font-extrabold relative ${flameActive ? 'flame' : ''}`}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
         o
       </h1>
       <h1
-        className={`cursor-pointer text-2xl md:text-8xl m-0 md:m-2 font-extrabold relative ${flameActive ? 'flame' : ''}`}
+        className={`cursor-pointer text-xl md:text-4xl m-0 md:m-2 font-extrabold relative ${flameActive ? 'flame' : ''}`}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
         e
       </h1>
       <h1
-        className={`cursor-pointer text-2xl md:text-8xl m-0 md:m-2 font-extrabold relative ${flameActive ? 'flame' : ''}`}
+        className={`cursor-pointer text-xl md:text-4xl m-0 md:m-2 font-extrabold relative ${flameActive ? 'flame' : ''}`}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
@@ -43,7 +43,7 @@ const FlameTextIndex = () => {
       </h1>
 
       <h1
-        className={`cursor-pointer text-2xl md:text-8xl m-0 md:m-2 font-extrabold relative ${flameActive ? 'flame' : ''}`}
+        className={`cursor-pointer text-xl md:text-4xl m-0 md:m-2 font-extrabold relative ${flameActive ? 'flame' : ''}`}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
@@ -53,4 +53,4 @@ const FlameTextIndex = () => {
   );
 };
 
-export default FlameTextIndex;
+export default FlameText;
