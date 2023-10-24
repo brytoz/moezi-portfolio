@@ -3,6 +3,7 @@ import { BsSpotify } from "react-icons/bs";
 import { SiAudiomack } from "react-icons/si";
 import { BiLogoYoutube } from "react-icons/bi";
 import { SiApplemusic } from "react-icons/si";
+import { AiFillInstagram } from "react-icons/ai";
 
 export default function Socials() {
   return (
@@ -29,10 +30,10 @@ export default function Socials() {
 
         https://twitter.com/moezi_cc?s=21&t=gmWQQLq4sg_fVJ3imx2HPw
 
-        https://www.instagram.com/moezi_cc
+        
 
          */}
-        <div className="  ">
+         <div className="  ">
           <a
             href="https://youtube.com/@moezi_cc?src=Linkfire&lId=6e5971f1-d180-4450-973c-41a81250144d&cId=d3d58fd7-4c47-11e6-9fd0-066c3e7a8751"
             target="_blank"
@@ -44,6 +45,19 @@ export default function Socials() {
             />
           </a>
         </div>
+        <div className="  ">
+          <a
+            href="https://www.instagram.com/moezi_cc"
+            target="_blank"
+            referrerPolicy="no_referrer"
+          >
+            <AiFillInstagram
+              title="Instagram"
+              className="cursor-pointer text-black/50 rounded-xl  bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-4xl md:text-5xl transition duration-500 ease-in-out transform hover:-translate-z-1 hover:scale-110 "
+            />
+          </a>
+        </div>
+       
         <div className="  ">
         <a
             href="https://audiomack.com/moezi"

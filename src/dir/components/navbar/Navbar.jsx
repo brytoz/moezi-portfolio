@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
 import "./navbar.css";
 import FlameText from "../FlameText";
-const Navbar = ({ showAbout, showMusic, showContact, showGallery }) => {
+const Navbar = ({ showAbout, showMusic, showContact, showGallery, showVideo }) => {
   const [scrolledNav, setScrolledNav] = useState(false);
   const [scrolledOffset, setScrolledOffset] = useState(0);
   const [scrollingDown, setScrollingDown] = useState(false);
@@ -97,6 +97,17 @@ const Navbar = ({ showAbout, showMusic, showContact, showGallery }) => {
                   onClick={showMusic}
                 >
                   Music
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="videos"
+                  spy={true}
+                  smooth="easeInOutQuad"
+                  duration={2500}
+                  onClick={showVideo}
+                >
+                  Videos
                 </Link>
               </li>
               <li>

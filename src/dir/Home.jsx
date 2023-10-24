@@ -7,13 +7,16 @@ import Info from "./components/Info";
 import Music from "./components/Music";
 import Contact from "./components/Contact";
 import MainGallery from "./components/MainGallery";
+import Videos from "./components/Videos";
 
-const BackgroundImage = () => {
+const Home = () => {
   const [loaded, setLoaded] = useState(false);
   const [loadedText, setLoadedText] = useState(false);
   const [showMusic, setShowMusic] = useState(false);
   const [showContact, setshowContact] = useState(false); 
   const [showGallery, setshowGallery] = useState(false); 
+  const [showVideo, setshowVideo] = useState(false); 
+  
 
   useEffect(() => {
     setTimeout(() => {
@@ -27,6 +30,7 @@ const BackgroundImage = () => {
       {showMusic && <Music closeAbout={() => setShowMusic(false)} />}
       {showContact && <Contact closeContact={() => setshowContact(false)} />}
       {showGallery && <MainGallery closeGallery={() => setshowGallery(false)} />}
+      {showVideo && <Videos closeVideos={() => setshowVideo(false)} />}
       
 
       <div className="absolute top-0 w-full">
@@ -35,6 +39,7 @@ const BackgroundImage = () => {
           showAbout={() => setLoadedText(!loadedText)}
           showContact={() => setshowContact(!showContact)}
           showGallery={() => setshowGallery(!showGallery)}
+          showVideo={() => setshowVideo(!showVideo)}
         />
       </div>
 
@@ -58,4 +63,4 @@ const BackgroundImage = () => {
   );
 };
 
-export default BackgroundImage;
+export default Home;
